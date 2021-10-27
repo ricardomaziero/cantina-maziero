@@ -1,0 +1,46 @@
+<div class="container">
+  <ul class="nav nav-tabs" id="myTab" role="tablist">
+    <li class="nav-item" role="presentation">
+      <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#Pratos" type="button"
+        role="tab" aria-controls="Pratos" aria-selected="true">Pratos</button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#Bebidas" type="button" role="tab"
+        aria-controls="Bebidas" aria-selected="false">Bebidas</button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#Sobremesas" type="button"
+        role="tab" aria-controls="Sobremesas" aria-selected="false">Sobremesas</button>
+    </li>
+  </ul>
+
+  <div class="tab-content" id="myTabContent">
+
+    <div class="tab-pane fade show active" id="Pratos" role="tabpanel" aria-labelledby="home-tab">
+      <div class="row">
+        <div class="col-lg-3" *ngFor="let item of Filtrar('Pratos'); let i = index;">
+          <app-component-card [ItemAtual]="item"></app-component-card>
+        </div>
+      </div>
+    </div>
+
+    <div class="tab-pane fade" id="Bebidas" role="tabpanel" aria-labelledby="profile-tab">
+      <div class="row">
+        <div class="col-lg-3" *ngFor="let item of Filtrar('Bebidas'); let i = index;">
+          <app-component-card [ItemAtual]="item"></app-component-card>
+        </div>
+      </div>
+    </div>
+
+    <div class="tab-pane fade" id="Sobremesas" role="tabpanel" aria-labelledby="contact-tab">
+      <div class="row">
+        <div class="col-lg-3" *ngFor="let item of Filtrar('Sobremesas'); let i = index;">
+          <app-component-card [ItemAtual]="item"></app-component-card>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- <router-outlet></router-outlet> -->
