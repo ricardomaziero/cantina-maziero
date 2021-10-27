@@ -1,5 +1,10 @@
 # CantinaMaziero
 
+Website desenvolvido por Pedro Henrique e Ricardo Maziero,
+durante a Turma de Formação, no estágio da Cast Group, com o objetivo
+de fixar os conceitos de Nodejs, Angular, Bootstrap, Typescript e desenvolvimento
+Web em geral.
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.10.
 
 ## Development server
